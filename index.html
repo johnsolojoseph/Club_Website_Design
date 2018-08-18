@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- CSS and -->
+  <title>Computer Science Club</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+
+
+  <!--Header -->
+
+
+
+
+  <div class="text-1 bg-1 top-padding bottom-padding" id="top">
+    <!--Navbar -->
+    <nav class="transparent z-depth-0">
+      <div class="nav-wrapper">
+        <div class="container">
+        <!--  <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons menu">menu</i></a> -->
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#about">About</a></li>
+            <li><a href="#officers">Club Officers</a></li>
+            <li><a href="#calendar">Calendar</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--Mobile Nav -->
+    <!--<ul class="sidenav" id="mobile-demo">
+      <li><a href="#about">About</a></li>
+      <li><a href="#officers">Club Officers</a></li>
+      <li><a href="calendar">Calendar</a></li>
+    </ul> -->
+
+    <div class="fixed-action-btn horizontal">
+     <a class="btn-floating btn-large red">
+       <i class="large material-icons">menu</i>
+     </a>
+     <ul>
+       <li><a class="btn-floating red" href="#top"><i class="material-icons about-text">arrow_upward</i></a></li>
+       <li><a class="btn-floating grey" href="#about"><i class="material-icons about-text">insert_chart</i></a></li>
+       <li><a class="btn-floating red" href="#officers"><i class="material-icons officer-text">person</i></a></li>
+       <li><a class="btn-floating grey" href="#calendar"><i class="material-icons calendar-text">event</i></a></li>
+
+     </ul>
+   </div>
+
+
+
+
+    <div class="container">
+      <h1 class="header-title">Stan State CS Club </h1>
+
+      <p class="flow-text">A community of undergrads at CSU Stanislaus aiming to foster and cultivate technical interest in Central Valley.</p>
+
+      <br>
+
+
+      <a class="ghost-button-rounded-corners modal-trigger" href="#modal1">Join Now</a>
+      <br>
+
+
+
+
+      <!-- Modal Join Now -->
+      <!-- Modal Structure -->
+      <div id="modal1" class="modal modal-fixed-footer">
+        <div class="modal-content">
+          <h3 class="center pastel-black-color">Sign Up</h3>
+          <br>
+
+
+
+          <div class="row">
+    <form class="col s12" method="post" id="myform" name="contact_form"
+action="contact-form-handler.php">
+      <h6 class="pastel-black-color"> Contact Information </h6>
+      <br>
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="first_name" type="text" name="first_name" class="validate">
+          <label for="first_name">First Name</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="last_name" type="text" name="last_name" class="validate">
+          <label for="last_name">Last Name</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="email" type="email" name="email" class="validate">
+          <label for="email">Email</label>
+           <span class="helper-text" data-error="Please use a valid email address"></span>
+        </div>
+      </div>
+
+      <br>
+
+      <!-- Campus Classification -->
+      <h6 class="pastel-black-color"> Campus Classification </h6>
+      <br>
+      <p>
+      <label>
+        <input class="with-gap" name="group1" type="radio" value="Freshmen"/>
+        <span>Freshmen</span>
+      </label>
+    </p>
+    <p>
+      <label>
+        <input class="with-gap" name="group1" type="radio" value="Sophomore" />
+        <span>Sophomore</span>
+      </label>
+    </p>
+
+    <p>
+      <label>
+        <input class="with-gap" name="group1" type="radio" value="Junior" />
+        <span>Junior</span>
+      </label>
+    </p>
+
+    <p>
+      <label>
+        <input class="with-gap" name="group1" type="radio" value="Senior"/>
+        <span>Senior</span>
+      </label>
+    </p>
+
+    <p>
+      <label>
+        <input class="with-gap" name="group1" type="radio" value="Faculty/Staff" />
+        <span>Faculty / Staff</span>
+      </label>
+    </p>
+
+    <p>
+      <label>
+        <input class="with-gap" name="group1" type="radio" value="Graduate Student"/>
+        <span>Graduate Student</span>
+      </label>
+    </p>
+
+    <p>
+      <label>
+        <input class="with-gap" name="group1" type="radio" value="Credential Student" />
+        <span>Credential Student</span>
+      </label>
+    </p>
+
+    <p>
+      <label>
+        <input class="with-gap" name="group1" type="radio" value="Post-Bacc Undergraduate" />
+        <span>Post-Bacc Undergraduate</span>
+      </label>
+    </p>
+
+    <!--Message -->
+    <br>
+
+    <h6 class="pastel-black-color"> Comments / Questions / Concerns </h6>
+
+    <br>
+
+    <div class="input-field col s12">
+          <textarea id="message" name ="message" class="materialize-textarea"></textarea>
+          <label for="message">Message</label>
+    </div>
+
+
+
+  </div>
+        </div>
+        <div class="modal-footer">
+
+          <button class=" btn waves-light waves-effect red darken-3" type="submit" id= "submit" for="submit" name="action">Submit
+      <i class="material-icons right white-text">send</i>
+    </button>
+
+    </form>
+        </div>
+      </div>
+
+
+
+      <br>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  <!--About -->
+  <div class="container center" id="about">
+    <br>
+    <h3 class="header-title">About</h3>
+
+    <div class="row top-padding bottom-padding">
+
+      <div class="col s12 m12 l4">
+        <i class="medium material-icons">build</i>
+        <br>
+        <span class="bold">Workshops</span>
+        <br>
+        <p>Develop marketable skills with our workshops offered by club officers and faculty. A great way to practice coding outside of the classroom.</p>
+
+      </div>
+      <div class="col s12 m12 l4">
+        <i class="medium material-icons">group</i>
+        <br>
+        <span class="bold">Mentorships</span>
+        <br>
+        <p>Surround yourself with individuals who can facilitate the learning process. Our community gives back by helping out others with mentorships and coaching.</p>
+
+      </div>
+      <div class="col s12 m12 l4">
+        <i class="medium material-icons">work</i>
+        <br>
+        <span class="bold">Internships</span>
+        <br>
+        <p>Apply to internships offered exclusively by the club. We help build your professional network and prepare you for employment.</p>
+
+      </div>
+
+    </div>
+
+
+
+    <!--Row 2-->
+    <div class="row bottom-padding">
+      <div class="col s12 m12 l4">
+        <i class="medium material-icons">computer</i>
+        <br>
+        <span class="bold">Hackathons</span>
+        <br>
+        <p>Build and create an application at our annual hackathon. Employ the technical skills that you've learned here!</p>
+
+      </div>
+      <div class="col s12 m12 l4">
+        <i class="medium material-icons">code</i>
+        <br>
+        <span class="bold">Code Sessions</span>
+        <br>
+        <p>Code with your community. We hold meetings where we practice and teach the technical skills required to be a software developer.</p>
+
+      </div>
+      <div class="col s12 m12 l4">
+        <i class="medium material-icons">record_voice_over</i>
+        <br>
+        <span class="bold">Guest Speakers</span>
+        <br>
+        <p>Gain insight from professionals in the industry. Developers will hold talks on campus to discuss their experience and help others succeed.
+        </p>
+
+      </div>
+
+    </div>
+
+    <br>
+  </div>
+
+
+
+
+  <!--Club Officers -->
+
+  <div class="center grey-background top-padding bottom-padding" id="officers">
+    <div class="container">
+      <h3 class="header-2">Fall 2018 Club Officers</h3>
+      <br>
+
+      <!--Row 1 -->
+      <div class="row top-padding bottom-padding">
+
+        <div class="col s12 m12 l4">
+          <a href="https://acantellano.github.io/" target="_blank"><img src="img/anthony.jpg"></img></a>
+          <br><br>
+          <span class="bold">Anthony Cantellano</span>
+          <br>
+          <h6 class="bold">Founder</h6>
+          <p>Anthony Cantellano is the founder of the Computer Science Club with a growing knowledge in Java and Web development.
+          </p>
+          <br>
+        </div>
+
+
+
+        <div class="col s12 m12 l4">
+          <a href="http://johnsolo.info/" target="_blank"><img src="img/john.jpg"></img></a>
+          <br><br>
+          <span class="bold">John Solo</span>
+          <br>
+          <h6 class="bold">President</h6>
+          <p>Recipient of the NSF S-Stem grant scholarship. Currently working on research with networks and hoping to specialize in software engineering.
+          </p>
+          <br>
+        </div>
+
+
+
+        <div class="col s12 m12 l4">
+          <a href="https://github.com/AValdez3" target="_blank"><i class="large material-icons">face</i></a>
+          <br><br>
+          <span class="bold">Avelardo Valdez</span>
+          <br>
+          <h6 class="bold">Vice President</h6>
+          <p>Vice President of the Computer Science Club with growing experience in Java, Python, and Swift as well as the Unix Environment.</p>
+
+        </div>
+
+
+
+      </div>
+      <!--Row 2-->
+
+      <div class="row bottom-padding">
+        <div class="col s12 m12 l4">
+          <a href="https://github.com/spoiledmeat" target="_blank"><img src="img/james.jpg" class="president"></img></a>
+          <br><br>
+          <span class="bold">James Sweeten Jr.</span>
+          <br>
+          <h6 class="bold">Advisor</h6>
+          <p>Hard-working student at California State University, Stanislaus. Currently an entry level software developer at Novo Technologies in Modesto.</p>
+          <br>
+        </div>
+        <div class="col s12 m12 l4">
+          <i class="large material-icons">face</i>
+          <br><br>
+          <span class="bold">Jeffrey Cosio</span>
+          <br>
+          <h6 class="bold">Board Member</h6>
+          <p>Computer Science Club Board Member with a growing understanding for C++ and GML. Jeffrey is a Junior majoring in Computer Science.</p>
+          <br>
+        </div>
+        <div class="col s12 m12 l4">
+          <i class="large material-icons">face</i>
+          <br><br>
+          <span class="bold">Chris Gallo</span>
+          <br>
+          <h6 class="bold">Board Member</h6>
+          <p>Board Member for the Computer Science Club with a hunger to learn more about building and deploying of applications.</p>
+
+        </div>
+      </div>
+
+      <!--Row 3 -->
+      <div class="row bottom-padding">
+        <div class="col s12 m12 l4">
+          <a href="https://github.com/endlessrequiem" target="_blank"><img src="img/austin.jpg"></img></a>
+          <br><br>
+          <span class="bold">Austin White</span>
+          <br>
+          <h6 class="bold">Social Media Coordinator</h6>
+          <p>English major and Computer Science minor, Austin has been developing and publishing Android apps, as well as
+            building websites using HTML and JavaScript.</p>
+            <br>
+        </div>
+
+
+        <div class="col s12 m12 l4">
+          <i class="large material-icons">face</i>
+          <br><br>
+          <span class="bold">Janveer Gill</span>
+          <br>
+          <h6 class="bold">Treasurer</h6>
+          <p>Computer Science major at California State University, Stanislaus.
+            Currently the treasurer for the Computer Science Club.</p>
+            <br>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!--Events/Calendar -->
+  <div class="center bottom-padding">
+    <br></br>
+  <h3 class="header-title" id="calendar">Calendar</h3>
+  <br>
+<div class ="container">
+  <div class="responsive-iframe-container big-container">
+<iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=csclubcsustan%40gmail.com&amp;color=%231B887A&amp;ctz=America%2FLos_Angeles" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+</div>
+
+<div class="responsive-iframe-container small-container">
+<iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;mode=AGENDA&amp;height=400&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=csclubcsustan%40gmail.com&amp;color=%231B887A&amp;ctz=America%2FLos_Angeles" style="border-width:0" width="400" height="400" frameborder="0" scrolling="no"></iframe>
+</div>
+
+</div>
+
+
+<br class="bottom-padding">
+</div>
+
+
+
+  <!--Footer -->
+  <footer class="page-footer grey darken-4">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Info</h5>
+          <p class="text-lighten-4">
+            A community of undergrads at CSU Stanislaus aiming to foster and cultivate technical interest in Central Valley. The opinions expressed on this website are the club's own and do not reflect the views of California State University, Stanislaus. </p>
+
+
+        </div>
+        <div class="col l3 s12">
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Follow Us</h5>
+          <ul>
+            <li><a class="white-text" target="_blank" href="https://www.instagram.com/csustancsclub/"><i class="fab fa-instagram"></i>  Instagram</a></li>
+
+            <li><a class="white-text" target="_blank" href="https://www.facebook.com/CSUSTANCSC/?ref=br_rs"><i class="fab fa-facebook-square"></i>  Facebook</a></li>
+            <li><a class="white-text" target="_blank" href="https://twitter.com/CS_Club_Stan"><i class="fab fa-twitter-square"></i>  Twitter</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="grey darken-4">
+      <div class="center footer-copyright">
+        <div class="container">
+          © Stan State Computer Science Club 2018
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+<!--Script -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+<script src="https://use.fontawesome.com/ba06f23458.js"></script>
+
+
+
+
+
+
+</html>

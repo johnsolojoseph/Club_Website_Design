@@ -1,0 +1,383 @@
+  body {
+    font: 20px 'Open Sans', sans-serif;
+    line-height: 1.8;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  /*Navigation*/
+
+  nav {
+    position: absolute;
+    top: 0px;
+    ;
+  }
+
+  .navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+  }
+
+  nav ul li a:hover {
+    background-color: #00000000;
+    color: white;
+  }
+
+  nav a.brand-logo {
+    color: #e8b6c4;
+  }
+
+  nav ul li a {
+    color: #D3D3D3;
+  }
+
+  .navbar-nav li a:hover {
+    color: #D49D00 !important;
+  }
+
+  /* Header Background Image Style */
+
+  .bg-1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/header.jpg');
+    /* Background image is centered vertically and horizontally at all times */
+    background-position: center center;
+    /* Background image doesn't tile */
+    background-repeat: no-repeat;
+    /* Background image is fixed in the viewport so that it doesn't move when
+    the content's height is greater than the image's height */
+    background-attachment: fixed;
+    /* This is what makes the background image rescale based
+    on the container's size */
+    background-size: cover;
+  }
+
+  .container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  /*Icons Styles */
+
+  i.material-icons {
+    color: #d92231;
+  }
+
+  i.menu {
+    color: #FFFFFF;
+  }
+
+  /*Image Styles for Club Officers */
+
+  img {
+    border: 3px solid #D49D00 !important;
+    border-radius: 50%;
+    height: 6rem;
+    width: 6rem;
+  }
+
+  /*Font styles */
+
+  .bold {
+    font-weight: bold;
+  }
+
+  h6 {
+    font-family: Helvetica;
+  }
+
+  .text-1 {
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: normal;
+    line-height: 31.2000007629395px;
+    text-transform: none;
+    color: #FFFFFF;
+  }
+
+  .italic-text {
+    font-style: italic;
+  }
+
+  /*Colors and Background Styles */
+
+  .javascript-colors {
+    color: #313d38;
+    background-color: #e5bb31;
+  }
+
+  .grey-background {
+    background-color: #212121;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: normal;
+    line-height: 31.2000007629395px;
+    text-transform: none;
+    color: #FFFFFF;
+  }
+
+  /*Join Now Button */
+
+  #button-transparent {
+    width: 170px;
+    font-family: Arial, 'Open Sans';
+    height: 65px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 60px;
+    border: none;
+    border: solid 2px white;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0);
+    font-size: 25px;
+  }
+
+  #button-transparent:hover {
+    background: white;
+    color: rgba(0, 0, 0, .6);
+  }
+
+  .z-depth-0 {
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0);
+    -moz-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0);
+  }
+
+  /*Padding Classes */
+
+  .top-padding {
+    padding-top: 5%;
+  }
+
+  .bottom-padding {
+    padding-bottom: 5%;
+  }
+
+  /*Header Font Style */
+
+  .header-title {
+    font-family: Raleway, 'Open Sans';
+    font-size: 2.2em;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+
+  .header-2 {
+    font-family: 'Open Sans';
+    font-size: 2.2em;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+
+  /*Calendar CSS*/
+
+  * {
+    box-sizing: border-box;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  body {
+    font-family: Verdana, sans-serif;
+  }
+
+  .month {
+    padding: 70px 25px;
+    width: 100%;
+    background: #e53935;
+    text-align: center;
+  }
+
+  .month ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  .month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+
+  .month .prev {
+    float: left;
+    padding-top: 10px;
+  }
+
+  .month .next {
+    float: right;
+    padding-top: 10px;
+  }
+
+  .weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color: #ddd;
+  }
+
+  .weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #666;
+    text-align: center;
+  }
+
+  .days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+  }
+
+  .days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: #777;
+  }
+
+  .days li .active {
+    padding: 5px;
+    background: #D49D00;
+    color: white !important
+  }
+
+  /* Add media queries for smaller screens for Calendar */
+
+  @media screen and (max-width:720px) {
+    .weekdays li, .days li {
+      width: 13.1%;
+    }
+  }
+
+  @media screen and (max-width: 420px) {
+    .weekdays li, .days li {
+      width: 12.5%;
+    }
+    .days li .active {
+      padding: 2px;
+    }
+  }
+
+  @media screen and (max-width: 290px) {
+    .weekdays li, .days li {
+      width: 12.2%;
+    }
+  }
+
+  /* Making Google Calendar responsive */
+
+ @media (max-width: 550px) {
+     .big-container {
+         display: none;
+     }
+ }
+ @media (min-width: 550px) {
+     .small-container {
+         display: none;
+     }
+ }
+ /* Responsive iFrame */
+ .responsive-iframe-container {
+     position: relative;
+     padding-bottom: 56.25%;
+     padding-top: 30px;
+     height: 0;
+     overflow: hidden;
+ }
+ .responsive-iframe-container iframe,
+ .vresponsive-iframe-container object,
+ .vresponsive-iframe-container embed {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+ }
+
+ .pastel-black-color {
+   color: #1f1e1c;
+ }
+
+ /* label focus color */
+  .input-field input[type=text]:focus + label {
+    color: #D49D00 !important;
+}
+
+/* label underline focus color */
+  .input-field input[type=text]:focus {
+    border-bottom: 1px solid #D49D00 !important;
+    box-shadow: 0 1px 0 0 #D49D00 !important;
+  }
+
+.input-field input[type=email]:focus + label {
+    color: #D49D00 !important;
+}
+
+/* valid color */
+   .input-field input[type=text].valid {
+     border-bottom: 1px solid #D49D00 !important;
+     box-shadow: 0 1px 0 0 #D49D00 !important;
+}
+  .input-field input[type=email]:focus {
+    border-bottom: 1px solid #D49D00 !important;
+    box-shadow: 0 1px 0 0 #D49D00 !important;
+  }
+
+  .input-field input[type=email].valid {
+    border-bottom: 1px solid #D49D00 !important;
+    box-shadow: 0 1px 0 0 #D49D00 !important;
+}
+
+  [type="radio"]:checked + span:after,
+[type="radio"].with-gap:checked + span:before,
+[type="radio"].with-gap:checked + span:after {
+  border: 2px solid #D49D00 !important ;
+}
+
+[type="radio"]:checked + span:after,
+[type="radio"].with-gap:checked + span:after {
+  background-color: #D49D00 !important;
+}
+
+
+.input-field textarea:focus + label {
+  color: #D49D00 !important;
+}
+
+.row .input-field textarea:focus {
+  border-bottom: 1px solid #D49D00 !important;
+  box-shadow: 0 1px 0 0 #D49D00 !important
+}
+
+.ghost-button-rounded-corners {
+  display: inline-block;
+  width: 200px;
+  padding: 8px;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+}
+.ghost-button-rounded-corners:hover,
+.ghost-button-rounded-corners:active {
+  background-color: #fff;
+  color: #000;
+}
