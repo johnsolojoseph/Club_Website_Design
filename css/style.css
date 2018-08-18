@@ -360,7 +360,7 @@
   color: #D49D00 !important;
 }
 
-.row .input-field textarea:focus {
+.input-field textarea:focus {
   border-bottom: 1px solid #D49D00 !important;
   box-shadow: 0 1px 0 0 #D49D00 !important
 }
