@@ -5,6 +5,7 @@ $(document).ready(function () {
 
       $(document).ready(function(){
     $('.modal').modal();
+
   });
 
   document.addEventListener('DOMContentLoaded', function() {
@@ -14,6 +15,45 @@ $(document).ready(function () {
     hoverEnabled: false
   });
 });
+
+//Validates that the user did not leave any input blank
+function validateForm() {
+
+  var firstname = document.forms["contact_form"]["first_name"].value;
+  var lastname = document.forms["contact_form"]["last_name"].value;
+  var idNumber = document.forms["contact_form"]["id_number"].value;
+  var email = document.forms["contact_form"]["email"].value;
+  var campusClassification = document.forms["contact_form"]["group1"].value;
+  console.log(idNumber);
+  if (firstname == "") {
+     alert("Name cannot be empty.");
+     return false;
+  }
+  
+  if (lastname == "") {
+    alert("Last name cannot be empty.");
+    return false;
+  }
+  if (idNumber.length != 9) {
+    alert("ID number must be 9 numbers.");
+    return false;
+  }
+
+  if (email == "") {
+    alert("Email cannot be empty.");
+    return false;
+  }
+
+  if (campusClassification == "") {
+    alert("Please select a Campus Classification");
+    return false;
+  }
+  if (firstname != "") {
+    alert("Welcome to the Club!");
+  }
+  
+}
+
 
 
 //Adds smooth scrolling to Navbar links
