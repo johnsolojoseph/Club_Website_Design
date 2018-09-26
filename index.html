@@ -74,7 +74,7 @@
 
 
     <div class="container">
-      <h1 class="header-title">Stan State CS Club </h1>
+      <h1 class="header-title">CS Club at Stan State</h1>
 
       <p class="flow-text">A community of undergrads at CSU Stanislaus aiming to foster and cultivate technical interest in Central Valley.</p>
 
@@ -97,7 +97,8 @@
 
 
           <div class="row">
-    <form class="col s12" method="post" id="myform" onsubmit="M.toast({html: 'Form successfully submitted. We'll get back to you shortly!'})" name="contact_form"
+              <!-- M.toast({html: 'Form successfully submitted. We'll get back to you shortly!'})" -->
+    <form class="col s12" method="post" id="myform" onsubmit="return validateForm()" name="contact_form"
 action="contact-form-handler.php">
       <h6 class="pastel-black-color"> Contact Information </h6>
       <br>
@@ -110,6 +111,14 @@ action="contact-form-handler.php">
           <input id="last_name" type="text" name="last_name" class="validate">
           <label for="last_name">Last Name</label>
         </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12 m12 l12">
+          <input id="id_number" type="text" name="id_number" class="validate">
+          <label for="id_number">ID Number <i>ex:001234567</i></label>
+        </div>
+
+
       </div>
       <div class="row">
         <div class="input-field col s12">
@@ -178,7 +187,12 @@ action="contact-form-handler.php">
         <span>Post-Bacc Undergraduate</span>
       </label>
     </p>
-
+     <p>
+      <label>
+        <input name="mailing_list" type="checkbox" class="filled-in" checked="checked" value="Yes"/>
+        <span>Update me on meetings, workshops, and activites.</span>
+      </label>
+    </p>
     <!--Message -->
     <br>
 
@@ -197,7 +211,7 @@ action="contact-form-handler.php">
         </div>
         <div class="modal-footer">
 
-          <button class=" btn waves-light waves-effect red darken-3" type="submit" id= "submit" for="submit" name="action">Submit
+          <button class=" btn waves-light waves-effect red darken-3" type="submit" id= "submit" for="submit" name="action" >Submit
       <i class="material-icons right white-text">send</i>
     </button>
 
@@ -210,11 +224,6 @@ action="contact-form-handler.php">
       <br>
     </div>
   </div>
-
-
-
-
-
 
 
 
@@ -360,7 +369,7 @@ action="contact-form-handler.php">
           <br><br>
           <span class="bold">Jeffrey Cosio</span>
           <br>
-          <h6 class="bold">Board Member</h6>
+          <h6 class="bold">Secretary</h6>
           <p>Computer Science Club Board Member with a growing understanding for C++ and GML. Jeffrey is a Junior majoring in Computer Science.</p>
           <br>
         </div>
@@ -378,11 +387,11 @@ action="contact-form-handler.php">
       <!--Row 3 -->
       <div class="row bottom-padding">
         <div class="col s12 m12 l4">
-          <a href="https://github.com/endlessrequiem" target="_blank"><img src="img/austin.jpg"></img></a>
+          <a href="https://austinwhite.tech/" target="_blank"><img src="img/austin.jpg"></img></a>
           <br><br>
           <span class="bold">Austin White</span>
           <br>
-          <h6 class="bold">Social Media Coordinator</h6>
+          <h6 class="bold">Event Coordinator</h6>
           <p>English major and Computer Science minor, Austin has been developing and publishing Android apps, as well as
             building websites using HTML and JavaScript.</p>
             <br>
